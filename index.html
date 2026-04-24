@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>learn tailwind and npm</title>
   </head>
-  <body>
-    <header class="h-screen backdrop-blur-sm overflow-hidden">
+  <body class="bg-[url(./images/1.webp)] bg-cover bg-center">
+    <div class="w-full h-screen fixed backdrop-blur-sm -z-10 bg-[#24242469]" id="layer"></div>
+    <header class="h-screen overflow-hidden opacity-0">
       <nav class="max-w-5xl py-4 mx-auto px-4 md:px-6 lg:px-8 text-white">
         <ul class="flex gap-7 text-xl">
           <li><a href="#" class="text-blue-600">Home</a></li>
@@ -21,14 +22,15 @@
             Check out the
             <span class="text-orange-400">latest</span> technologies
           </h1>
-          <p class="mt-4 text-gray-100 text-lg">
+          <p class="my-5 text-gray-100 text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga
             harum ea aut perspiciatis, tenetur est rem dignissimos amet iusto at
             rerum dolores. Et soluta dolorem mollitia. Hic, aspernatur animi?
           </p>
           <a
             href="#"
-            class="block w-fit py-2 px-3 rounded-sm text-white bg-amber-500 hover:bg-white hover:text-gray-900 transition font-bold mt-3"
+            class="block w-fit py-2 px-3 rounded-sm text-white bg-amber-500 transition-colors duration-200 font-bold mt-3"
+            id="contactUs"
             >Contact Us</a
           >
         </div>
@@ -37,98 +39,99 @@
       <div class="w-full p-1 fixed bottom-2 ">
         <div class="perspective-distant flex mx-auto justify-center items-center">
           <ul
-            class="w-32 h-52 md:h-32 flex justify-center transform-3d relative -translate-z-250 duration-1000"
+            class="w-32 h-52 md:h-32 flex justify-center transform-3d relative -translate-z-175 md:-translate-z-250 duration-1000"
             id="slider"
-            data-deg="180"
+            data-deg="0"
           >
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
             <li
-              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white transition"
+              class="w-32 md:w-52 h-52 md:h-32 p-1 absolute rounded-[3px] backface-hidden cursor-pointer hover:outline-4 outline-white "
             ></li>
           </ul>
         </div>
       </div>
     </header>
+
     <script type="module" src="script.js"></script>
   </body>
 </html>
