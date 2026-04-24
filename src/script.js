@@ -5,6 +5,12 @@ import Observer from "gsap/Observer";
 
 gsap.registerPlugin(SplitText, Observer);
 
+// Import Images
+import img1 from "../images/1.webp";
+import img2 from "../images/2.webp";
+import img3 from "../images/3.webp";
+
+const images = [img1, img2, img3];
 // ============================================================
 // CONFIG
 // ============================================================
@@ -21,17 +27,17 @@ const contactUs = document.querySelector("p ~ a");
 const anchors = gsap.utils.toArray("nav li a");
 
 // ============================================================
+// Body Background
+// ============================================================
+document.body.style.backgroundImage = `url(${images[0]})`;
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundPosition = "center";
+
+// ============================================================
 // STATE
 // ============================================================
 let scrollValue = 0;
 let elements = [...items.slice(23), ...items.slice(0, 4)];
-
-// ============================================================
-// PRELOAD IMAGES
-// ============================================================
-for (let i = 1; i <= TOTAL_IMAGES; i++) {
-  new Image().src = `./images/${i}.webp`;
-}
 
 // ============================================================
 // OBSERVER
@@ -89,7 +95,7 @@ items.forEach((item, i) => {
   item.dataset.deg = value;
   item.style.cssText += `
     transform: rotateY(${value}deg) translateZ(${TRANSLATE_Z}px);
-    background-image: url(./images/${counter}.webp);
+    background-image: url(${images[counter - 1]});
     background-size: cover;
     background-position: center;
   `;
