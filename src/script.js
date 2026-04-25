@@ -42,13 +42,14 @@ let elements = [...items.slice(23), ...items.slice(0, 4)];
 // ============================================================
 // OBSERVER
 // ============================================================
+const isMobile = window.innerWidth <= 768;
+
 const observer = Observer.create({
   onUp:    () => scrollSlider(2),
   onDown:  () => scrollSlider(-2),
-  onLeft:  () => scrollSlider(2),
-  onRight: () => scrollSlider(-2),
+  onLeft:  () => scrollSlider(isMobile ? -2 : 2),
+  onRight: () => scrollSlider(isMobile ? 2 : -2),
 });
-
 // ============================================================
 // SLIDER
 // ============================================================
